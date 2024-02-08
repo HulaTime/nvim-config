@@ -17,3 +17,10 @@ vim.keymap.set('n', '<leader>y', "\"+y")
 vim.keymap.set('v', '<leader>y', "\"+y")
 vim.keymap.set('n', '<leader>Y', "\"+Y")
 
+-- keep the cursor in middle of screen when half page jumping
+vim.keymap.set('n', "<C-d>", "<C-d>zz")
+vim.keymap.set('n', "<C-u>", "<C-u>zz")
+
+-- keep the cursor in the middle of screen when navigating search terms
+vim.keymap.set('n', "n", "nzzzv")
+vim.keymap.set('n', "N", "Nzzzv")
