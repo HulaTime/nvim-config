@@ -56,7 +56,12 @@ return require('packer').startup(function(use)
 			{'hrsh7th/cmp-nvim-lsp'},
 			{'L3MON4D3/LuaSnip'},
 		}
-	}	
+	}
+
+  -- Toggle Terminal
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
 
 	-- Themes
 	use { 'ribru17/bamboo.nvim', as = 'bamboo-theme' }
