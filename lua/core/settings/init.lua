@@ -16,9 +16,9 @@ vim.opt.undodir = os.getenv('HOME') .. '/.nvim/undodir' -- give the undo plugin 
 
 vim.opt.termguicolors = true
 
-vim.scrolloff = 8
+vim.opt.scrolloff = 8
 
-vim.updatetime = 50
+vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = '100'
 
