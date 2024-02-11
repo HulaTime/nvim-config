@@ -25,3 +25,7 @@ vim.keymap.set('n', "N", "Nzzzv")
 -- Find and replace word easy style
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+-- Wrap selected text in parenthesis
+vim.keymap.set("n", "<leader>wp", "viwc()<Esc>P")
+-- Wrap selected text in curly braces
+vim.keymap.set("n", "<leader>wc", "viwc{}<Esc>P")
