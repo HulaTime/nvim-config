@@ -5,4 +5,6 @@ require('core.plugin_config.undotree')
 require('core.plugin_config.lsp')
 require('core.plugin_config.fugitive')
 require('core.plugin_config.telescope')
+require('core.plugin_config.vim-test')
+require('core.plugin_config.neotest')
 
