@@ -58,6 +58,8 @@ return require('packer').startup(function(use)
     }
   }
 
+  use 'dense-analysis/ale'
+
   -- Neotest!! it's not time yet
   -- remember to require specific test runners
   use {

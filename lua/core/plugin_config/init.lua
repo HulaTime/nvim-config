@@ -7,4 +7,4 @@ require('core.plugin_config.fugitive')
 require('core.plugin_config.telescope')
 require('core.plugin_config.vim-test')
 require('core.plugin_config.neotest')
-
+require('core.plugin_config.ale')
