@@ -8,3 +8,5 @@ require('core.plugin_config.telescope')
 require('core.plugin_config.vim-test')
 require('core.plugin_config.neotest')
 require('core.plugin_config.ale')
+require('core.plugin_config.harpoon')
+

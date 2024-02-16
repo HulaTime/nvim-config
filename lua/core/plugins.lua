@@ -32,7 +32,11 @@ return require('packer').startup(function(use)
   }
 
   -- Cos primeagen plugs his shit and it might actually be decent
-  use 'theprimeagen/harpoon'
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { { "nvim-lua/plenary.nvim" } }
+  }
 
   -- undotree for branching change history that we can jump to
   use 'mbbill/undotree'
