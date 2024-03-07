@@ -29,3 +29,6 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>wp", "viwc()<Esc>P")
 -- Wrap selected text in curly braces
 vim.keymap.set("n", "<leader>wc", "viwc{}<Esc>P")
+
+-- Open diagnostic float window
+vim.keymap.set("n", "<leader>do", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true })

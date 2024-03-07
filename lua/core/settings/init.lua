@@ -8,7 +8,7 @@ vim.opt.softtabstop = 2     -- Pressing Tab inserts 2 spaces
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = true
+vim.opt.wrap = false
 
 vim.opt.swapfile = false  -- disable swapfiles
 vim.opt.backup = false    -- I guess disable backups
