@@ -93,6 +93,7 @@ return require('packer').startup(function(use)
   }
 
   -- Themes
+  use "rebelot/kanagawa.nvim"
   use { 'ribru17/bamboo.nvim', as = 'bamboo-theme' }
   use { "catppuccin/nvim", as = "catppuccin-theme" }
   use {

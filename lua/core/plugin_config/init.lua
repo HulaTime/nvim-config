@@ -1,5 +1,7 @@
 require('core.plugin_config.nvim-tree')
-require('core.plugin_config.themes.bamboo')
+-- require('core.plugin_config.themes.bamboo')
+-- require('core.plugin_config.themes.darcula-dark')
+require('core.plugin_config.themes.kanagawa.init')
 require('core.plugin_config.treesitter')
 require('core.plugin_config.undotree')
 require('core.plugin_config.lsp')
@@ -10,4 +12,3 @@ require('core.plugin_config.neotest')
 require('core.plugin_config.ale')
 require('core.plugin_config.harpoon')
 require('core.plugin_config.lualine')
-
