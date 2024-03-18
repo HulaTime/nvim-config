@@ -1,3 +1,5 @@
+require('core.settings.commands')
+
 -- move highlighted lines up and down
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
@@ -32,3 +34,4 @@ vim.keymap.set("n", "<leader>wc", "viwc{}<Esc>P")
 
 -- Open diagnostic float window
 vim.keymap.set("n", "<leader>do", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true })
+
