@@ -31,6 +31,9 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
+  -- Comments
+  use "terrortylor/nvim-comment"
+
   -- Cos primeagen plugs his shit and it might actually be decent
   use {
     "ThePrimeagen/harpoon",
@@ -63,18 +66,6 @@ return require('packer').startup(function(use)
   }
 
   use 'dense-analysis/ale'
-
-  -- Neotest!! it's not time yet
-  -- remember to require specific test runners
-  use {
-    "nvim-neotest/neotest",
-    requires = {
-      "nvim-lua/plenary.nvim",
-      "antoinemadec/FixCursorHold.nvim",
-      "nvim-treesitter/nvim-treesitter",
-      "nvim-neotest/neotest-jest"
-    }
-  }
 
   -- Starting with vim test since it looks pretty decent
   use {
