@@ -12,7 +12,6 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false  -- disable swapfiles
 vim.opt.backup = false    -- I guess disable backups
-vim.opt.undodir = os.getenv('HOME') .. '/.nvim/undodir' -- give the undo plugin long lived access for days and days of stuff
 
 vim.opt.termguicolors = true
 
