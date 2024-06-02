@@ -77,11 +77,34 @@ return require('packer').startup(function(use)
     end
   }
 
+  use {
+    "nvim-neotest/nvim-nio"
+  }
+
+  use {
+    "nvim-neotest/neotest-jest"
+  }
+
+  use {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-neotest/neotest-jest"
+    }
+  }
 
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
 
   -- Themes
   use "rebelot/kanagawa.nvim"
