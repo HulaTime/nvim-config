@@ -67,16 +67,7 @@ return require('packer').startup(function(use)
 
   use 'dense-analysis/ale'
 
-  -- Starting with vim test since it looks pretty decent
-  use {
-    'vim-test/vim-test',
-    config = function()
-      vim.cmd([[
-      let test#strategy = 'neovim'
-      ]])
-    end
-  }
-
+  -- Testing requirements and neotest
   use {
     "nvim-neotest/nvim-nio"
   }
@@ -95,6 +86,7 @@ return require('packer').startup(function(use)
       "nvim-neotest/neotest-jest"
     }
   }
+  -- ----------------------------------
 
   use {
     'nvim-lualine/lualine.nvim',
