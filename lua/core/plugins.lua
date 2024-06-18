@@ -1,6 +1,7 @@
 local neotest_loader = require('core.plugin_config.neotest.plugin-loader')
 local lsp_loader = require('core.plugin_config.lsp-zero.plugin-loader')
 local debugger_loader = require('core.plugin_config.debugger.plugin-loader')
+local neogit_loader = require('core.plugin_config.neogit.plugin-loader')
 
 local ensure_packer = function()
   local fn = vim.fn
@@ -39,6 +40,7 @@ return require('packer').startup(function(use)
   lsp_loader.load(use)
   neotest_loader.load(use)
   debugger_loader.load(use)
+  neogit_loader.load(use)
 
   -- Comments
   use "terrortylor/nvim-comment"
