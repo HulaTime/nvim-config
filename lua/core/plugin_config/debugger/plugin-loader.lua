@@ -11,8 +11,6 @@ Loader.load = function(use)
     run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
   }
   -- -------------------
-
-  return Loader
 end
 
 return Loader

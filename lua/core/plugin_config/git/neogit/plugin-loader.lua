@@ -10,7 +10,6 @@ Loader.load = function(use)
     },
     config = true
   }
-  return Loader
 end
 
 return Loader

@@ -11,7 +11,8 @@ require('core.plugin_config.undotree')
 require('core.plugin_config.lsp-zero')
 
 -- require('core.plugin_config.fugitive')
-require('core.plugin_config.neogit')
+require('core.plugin_config.git.neogit')
+require('core.plugin_config.git.octo')
 
 require('core.plugin_config.telescope')
 require('core.plugin_config.ale')
