@@ -23,7 +23,7 @@ vim.keymap.set('n', '<leader>dso', ":lua require('dap').step_over()<CR>", { nore
 -- step into
 vim.keymap.set('n', '<leader>dsi', ":lua require('dap').step_into()<CR>", { noremap = true, silent = true })
 -- toggle the repl inspection window
-vim.keymap.set('n', '<leader>do', ":lua require('dap').repl.toggle()<CR>", { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>dw', ":lua require('dap').repl.toggle()<CR>", { noremap = true, silent = true })
 -- close the current sesssion without terminating it
 vim.keymap.set('n', '<leader>dxc', ":lua require('dap').repl.toggle()<CR>", { noremap = true, silent = true })
 -- terminate the current session

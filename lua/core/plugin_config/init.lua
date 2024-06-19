@@ -1,6 +1,7 @@
 -- require('core.plugin_config.themes.bamboo')
 -- require('core.plugin_config.themes.darcula-dark')
-require('core.plugin_config.themes.kanagawa.init')
+-- require('core.plugin_config.themes.kanagawa.init')
+require('core.plugin_config.themes.tokyonight')
 
 -- require('core.plugin_config.vim-test')
 require('core.plugin_config.neotest')
