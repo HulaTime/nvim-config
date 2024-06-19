@@ -32,13 +32,22 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = { 'tsserver', 'rust_analyzer', 'lua_ls' },
+  ensure_installed = { 'tsserver', 'rust_analyzer', 'lua_ls', 'terraformls' },
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
       local lua_opts = lsp_zero.nvim_lua_ls()
       require('lspconfig').lua_ls.setup(lua_opts)
     end,
+    -- terraformls = function()
+    --   require('lspconfig').terraformls.setup({})
+    --   vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+    --     pattern = { "*.tf", "*.tfvars" },
+    --     callback = function()
+    --       vim.lsp.buf.format()
+    --     end,
+    --   })
+    -- end,
   }
 })
 
