@@ -44,6 +44,20 @@ return require('packer').startup(function(use)
   neogit_loader.load(use)
   octo_loader.load(use)
 
+  -- Indent lines
+  use "lukas-reineke/indent-blankline.nvim"
+  -- use {
+  --   "lukas-reineke/indent-blankline.nvim",
+  --   config = function()
+  --     local opts = {}
+  --     -- Other blankline configuration here
+  --     require("ibl").setup(require("indent-rainbowline").make_opts(opts))
+  --   end,
+  --   requires = {
+  --     "TheGLander/indent-rainbowline.nvim",
+  --   },
+  -- }
+
   -- Comments
   use "terrortylor/nvim-comment"
 

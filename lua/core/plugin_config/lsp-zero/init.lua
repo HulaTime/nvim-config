@@ -39,15 +39,15 @@ require('mason-lspconfig').setup({
       local lua_opts = lsp_zero.nvim_lua_ls()
       require('lspconfig').lua_ls.setup(lua_opts)
     end,
-    -- terraformls = function()
-    --   require('lspconfig').terraformls.setup({})
-    --   vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-    --     pattern = { "*.tf", "*.tfvars" },
-    --     callback = function()
-    --       vim.lsp.buf.format()
-    --     end,
-    --   })
-    -- end,
+    terraformls = function()
+      require('lspconfig').terraformls.setup({})
+      vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+        pattern = { "*.tf", "*.tfvars" },
+        callback = function()
+          vim.lsp.buf.format()
+        end,
+      })
+    end,
   }
 })
 
