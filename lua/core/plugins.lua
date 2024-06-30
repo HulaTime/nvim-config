@@ -3,6 +3,7 @@ local lsp_loader = require('core.plugin_config.lsp-zero.plugin-loader')
 local debugger_loader = require('core.plugin_config.debugger.plugin-loader')
 local neogit_loader = require('core.plugin_config.git.neogit.plugin-loader')
 local octo_loader = require('core.plugin_config.git.octo.plugin-loader')
+local gitsigns = require('core.plugin_config.git.gitsigns.plugin-loader')
 
 local ensure_packer = function()
   local fn = vim.fn
@@ -43,6 +44,7 @@ return require('packer').startup(function(use)
   debugger_loader.load(use)
   neogit_loader.load(use)
   octo_loader.load(use)
+  gitsigns.load(use)
 
   -- Indent lines
   use "lukas-reineke/indent-blankline.nvim"
